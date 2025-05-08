@@ -1,6 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, HostListener } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { NgwWowService } from 'ngx-wow';
 
 
 @Component({
@@ -12,6 +13,10 @@ import { RouterOutlet } from '@angular/router';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppComponent {
+  constructor(private wowService:NgwWowService){
+    this.wowService.init()
+  }
+
   showArrow:boolean = false
   @HostListener('window:scroll') onScroll(){
     let scrollPosition = window.scrollY;
