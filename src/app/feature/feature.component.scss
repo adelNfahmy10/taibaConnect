@@ -1,0 +1,42 @@
+$main-color:#55508D;
+.feature{
+  background-color : #F6F8FA;
+  .title{
+    h5{
+      font-size: 16px;
+      color: $main-color;
+    }
+    h6{
+      font-size: 38px;
+      color: $main-color;
+    }
+  }
+  .feature-box{
+    position: relative;
+    .feature-title{
+      h5{
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 0;
+        color: $main-color;
+      }
+    }
+    .feature-footer{
+      background-color: $main-color;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+@media (max-width:576px) {
+  h6{
+    font-size: 30px !important;
+  }
+  .feature-title{
+    h5{
+      font-size: 24px !important;
+    }
+  }
+}

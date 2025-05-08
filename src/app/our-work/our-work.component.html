@@ -1,0 +1,37 @@
+<section id="our-work" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3>Our Work</h3>
+      </div>
+      <div class="col-12">
+        <swiper-container class="mySwiper py-3" [slides-per-view]="swiperConfig.slidesPerView"
+          [space-between]="swiperConfig.spaceBetween"
+          [breakpoints]="swiperConfig.breakpoints"
+          [loop]="swiperConfig.loop"
+          autoplay-delay="1000" autoplay-disable-on-interaction="false"
+          centered-slides="true">
+          @for(image of imageSlider1; track $index){
+            <swiper-slide>
+              <img [src]="image" class="img-slider w-100 px-2" alt="TaibaConnect">
+            </swiper-slide>
+          }
+        </swiper-container>
+      </div>
+      <div class="col-12">
+        <swiper-container class="mySwiper py-3" dir="rtl" [slides-per-view]="swiperConfig.slidesPerView"
+          [space-between]="swiperConfig.spaceBetween"
+          [breakpoints]="swiperConfig.breakpoints"
+          [loop]="swiperConfig.loop"
+          autoplay-delay="1000" autoplay-disable-on-interaction="false"
+          centered-slides="true">
+          @for(image of imageSlider2; track $index){
+            <swiper-slide>
+              <img [src]="image" class="img-slider w-100 px-2" alt="TaibaConnect">
+            </swiper-slide>
+          }
+        </swiper-container>
+      </div>
+    </div>
+  </div>
+</section>

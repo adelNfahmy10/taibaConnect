@@ -1,0 +1,29 @@
+.title{
+  span{
+    background-color: #55508D;
+    color: #fff;
+    height: fit-content;
+  }
+}
+.why-image{
+  img{
+    width: 80%;
+  }
+}
+.why-box{
+  background-color: #F6F8FA;
+  h5{
+    font-size: 24px;
+  }
+  p{
+    margin: 12px 0 0;
+    font-size: 20px;
+  }
+}
+.arrow-link{
+ & > div{
+  border: 1px solid #0039C7;
+  width: 30px;
+  height: 30px;
+ }
+}

@@ -1,0 +1,20 @@
+$mainColor: #f79320;
+.cr{
+  cursor: pointer;
+}
+.main-color{
+  color:$mainColor
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+h3{
+  font-size: 36px;
+  font-weight: 700;
+}
+@media (max-width:567px) {
+  h3{
+    font-size: 24px !important;
+  }
+}

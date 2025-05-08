@@ -1,0 +1,53 @@
+.ceo-image{
+  position: relative;
+  .ceo{
+    position: relative;
+    z-index: 1;
+    width: 300px;
+  }
+  img:not(.ceo){
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%);
+    z-index: 1;
+    &.circle-img{
+      bottom: 20%;
+      left: 45%;
+      width: 150px;
+    }
+  }
+}
+.ceo-description{
+  p{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  h6{
+    font-size: 24px;
+  }
+  span{
+    font-size: 20px;
+  }
+}
+
+@media (max-width:576px) {
+  .ceo-description{
+    p{
+      font-size: 22px;
+      line-height: 28px;
+    }
+    h6{
+      font-size: 20px;
+      text-align: center;
+
+    }
+    span{
+      font-size: 16px;
+      text-align: center;
+      display: block;
+    }
+  }
+}

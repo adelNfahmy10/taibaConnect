@@ -1,0 +1,43 @@
+$mainColor:#FBB819;
+.about{
+  .about-img{
+    position: relative;
+    img{
+      position: relative;
+      width: 70%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 2;
+      &.line-img{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 2;
+        width: 100%;
+        z-index: 1;
+      }
+    }
+  }
+  .about-info{
+    .line{
+      width: 20px;
+      height: 6px;
+      background-color: #55508D;
+      position: relative;
+      top: 40%;
+      transform: translateY(-50%);
+    }
+    .content-about{
+      h3{
+        color: #55508D;
+      }
+    }
+  }
+}
+
+
+
+
+

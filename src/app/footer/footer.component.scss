@@ -1,0 +1,29 @@
+$mainColor:#55508d;
+footer{
+  background-color: #FBFBFB;
+  .logo{
+    p{
+      color: #1F2E47;
+      line-height: 20px;
+    }
+  }
+  .touch{
+    li{
+      font-size: 14px;
+    }
+  }
+
+  .footer-icons{
+    transition: all .3s;
+  }
+  .footer-contact{
+    span{
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  .copy-right{
+    background-color: $mainColor;
+    color: #fff;
+  }
+}

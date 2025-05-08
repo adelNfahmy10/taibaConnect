@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Lexend+Deca:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+body{
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+$mainColor:#55508d;
+.arrowup{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  background-color: $mainColor;
+  z-index: 9999;
+  i{
+    position: relative;
+    top: -3px;
+  }
+}

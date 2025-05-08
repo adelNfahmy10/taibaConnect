@@ -1,0 +1,41 @@
+$mainColor : #55508d;
+.meeting{
+  background-color: $mainColor;
+  @media (min-width: 768px) {
+    height: 100px;
+  }
+  .meeting-content{
+    color: #fff;
+    h4{
+      font-size:36px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+    span{
+      font-size: 30px;
+      font-weight: 200;
+    }
+    button{
+      color: $mainColor;
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+  .meeting-image{
+    bottom: 0 !important;
+    left: 25% !important;
+  }
+}
+
+@media (max-width:576px) {
+  h4{
+    font-size:30px !important;
+  }
+  span{
+    font-size: 20px !important;
+  }
+  button{
+    margin-top: 10px;
+    font-size: 18px;
+  }
+}
