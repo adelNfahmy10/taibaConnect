@@ -1,5 +1,5 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, HostListener } from '@angular/core';
-import { NgClass } from '@angular/common';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, HostListener, inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser, NgClass } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NgwWowService } from 'ngx-wow';
 
@@ -13,8 +13,13 @@ import { NgwWowService } from 'ngx-wow';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppComponent {
-  constructor(private wowService:NgwWowService){
-    this.wowService.init()
+  private readonly _PLATFORM_ID = inject(PLATFORM_ID)
+  private readonly _NgwWowService = inject(NgwWowService)
+
+  ngOnInit(): void {
+    if (isPlatformBrowser(this._PLATFORM_ID)) {
+      this._NgwWowService.init()
+    }
   }
 
   showArrow:boolean = false
