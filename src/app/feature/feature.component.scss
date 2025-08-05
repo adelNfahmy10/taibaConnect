@@ -14,11 +14,20 @@ $main-color:#55508D;
   .feature-box{
     position: relative;
     .feature-title{
+      text-align: center;
+      margin-top: 10px;
       h5{
-        font-size: 28px;
+        font-size: 22px;
         font-weight: 700;
         margin-bottom: 0;
         color: $main-color;
+      }
+    }
+
+    .feature-description{
+      p{
+        font-size: 17px;
+        margin-bottom: 0 !important;
       }
     }
     .feature-footer{
@@ -39,4 +48,21 @@ $main-color:#55508D;
       font-size: 24px !important;
     }
   }
+}
+
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  height: 370px;
+}
+
+swiper-slide img {
+  display: block;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
 }
